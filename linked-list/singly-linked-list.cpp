@@ -68,5 +68,9 @@ int main() {
 
   cout << "The size of the linked list is " << size() << endl;
 
+  cout << "7 " << (findNode(7) ? "Found" : "Not Found") << endl;
+  cout << "6 " << (findNode(6) ? "Found" : "Not Found") << endl;
+  cout << "5 " << (findNode(5) ? "Found" : "Not Found") << endl;
+
   return 0;
 }
