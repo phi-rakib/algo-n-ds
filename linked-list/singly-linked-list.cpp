@@ -55,5 +55,8 @@ int main() {
   addNode(7);
 
   display();
+
+  cout << "The size of the linked list is " << size() << endl;
+  
   return 0;
 }
