@@ -37,6 +37,11 @@ void display() {
 }
 
 int main() {
-  
+  addNode(4);
+  addNode(6);
+  addNode(9);
+  addNode(7);
+
+  display();
   return 0;
 }
