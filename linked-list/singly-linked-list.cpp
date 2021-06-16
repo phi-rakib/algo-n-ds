@@ -36,6 +36,18 @@ void display() {
   }
 }
 
+int size() {
+  int count = 0;
+  node *currentNode = head;
+  
+  while(currentNode != NULL) {
+    currentNode = currentNode->next;
+    count++;
+  }
+
+  return count;
+}
+
 int main() {
   addNode(4);
   addNode(6);
