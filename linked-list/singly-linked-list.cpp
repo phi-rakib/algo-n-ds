@@ -108,5 +108,10 @@ int main() {
   cout << "The size of the linked list is " << size() << endl;
   display();
 
+  addNode(11);
+  addNode(21);
+  cout << "The size of the linked list is " << size() << endl;
+  display();
+
   return 0;
 }
