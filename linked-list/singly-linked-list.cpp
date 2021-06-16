@@ -28,6 +28,14 @@ void addNode(int value) {
   currentNode->next = newNode;
 }
 
+void display() {
+  node *currentNode = head;
+  while (currentNode != NULL) {
+    cout << currentNode->value << endl;
+    currentNode = currentNode->next;
+  }
+}
+
 int main() {
   
   return 0;
