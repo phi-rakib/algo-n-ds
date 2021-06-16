@@ -98,12 +98,12 @@ int main() {
   cout << "6 " << (findNode(6) ? "Found" : "Not Found") << endl;
   cout << "5 " << (findNode(5) ? "Found" : "Not Found") << endl;
 
-  cout << "Deleting node 7" << endl;
+  cout << "Deleting node with value 7" << endl;
   deleteNode(7);
   cout << "The size of the linked list is " << size() << endl;
   display();
 
-  cout << "Deleting node 4" << endl;
+  cout << "Deleting node with value 4" << endl;
   deleteNode(4);
   cout << "The size of the linked list is " << size() << endl;
   display();
@@ -113,7 +113,7 @@ int main() {
   cout << "The size of the linked list is " << size() << endl;
   display();
 
-  cout << "Deleting node 9" << endl;
+  cout << "Deleting node with value 9" << endl;
   deleteNode(9);
   cout << "The size of the linked list is " << size() << endl;
   display();
