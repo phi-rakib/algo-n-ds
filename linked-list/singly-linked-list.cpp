@@ -48,6 +48,16 @@ int size() {
   return count;
 }
 
+bool findNode(int value) {
+  node *currentNode = head;
+  while(currentNode != NULL) {
+    if(currentNode->value == value)
+      return true;
+    currentNode = currentNode->next;
+  }
+  return false;
+}
+
 int main() {
   addNode(4);
   addNode(6);
@@ -57,6 +67,6 @@ int main() {
   display();
 
   cout << "The size of the linked list is " << size() << endl;
-  
+
   return 0;
 }
