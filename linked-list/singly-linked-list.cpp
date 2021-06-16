@@ -103,5 +103,10 @@ int main() {
   cout << "The size of the linked list is " << size() << endl;
   display();
 
+  cout << "Deleting node 4" << endl;
+  deleteNode(4);
+  cout << "The size of the linked list is " << size() << endl;
+  display();
+
   return 0;
 }
