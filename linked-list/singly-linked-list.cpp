@@ -98,5 +98,10 @@ int main() {
   cout << "6 " << (findNode(6) ? "Found" : "Not Found") << endl;
   cout << "5 " << (findNode(5) ? "Found" : "Not Found") << endl;
 
+  cout << "Deleting node 7" << endl;
+  deleteNode(7);
+  cout << "The size of the linked list is " << size() << endl;
+  display();
+
   return 0;
 }
