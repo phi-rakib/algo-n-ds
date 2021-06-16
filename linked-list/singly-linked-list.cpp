@@ -58,6 +58,32 @@ bool findNode(int value) {
   return false;
 }
 
+void deleteNode(int value) {
+  if(head == NULL)
+    return;
+
+  node *currentNode = head;
+  node *previousNode = head;
+
+  while(currentNode != NULL) {
+    if(currentNode->value == value) {
+      if(currentNode == head) {
+        node *tmp = head;
+        head = currentNode->next;
+        delete tmp;
+      }
+      else
+      {
+        previousNode->next = currentNode->next;
+        delete currentNode;
+      }
+      return;
+    }
+    previousNode = currentNode;
+    currentNode = currentNode->next;
+  }
+}
+
 int main() {
   addNode(4);
   addNode(6);
