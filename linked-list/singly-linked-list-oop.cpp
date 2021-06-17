@@ -92,6 +92,40 @@ class SinglyLinkedList {
 };
 
 int main() {
+  SinglyLinkedList list;
   
+  list.addNode(4);
+  list.addNode(6);
+  list.addNode(9);
+  list.addNode(7);
+
+  list.display();
+
+  cout << "The size of the linked list is " << list.size() << endl;
+
+  cout << "7 " << (list.findNode(7) ? "Found" : "Not Found") << endl;
+  cout << "6 " << (list.findNode(6) ? "Found" : "Not Found") << endl;
+  cout << "5 " << (list.findNode(5) ? "Found" : "Not Found") << endl;
+
+  cout << "Deleting node with value 7" << endl;
+  list.deleteNode(7);
+  cout << "The size of the linked list is " << list.size() << endl;
+  list.display();
+
+  cout << "Deleting node with value 4" << endl;
+  list.deleteNode(4);
+  cout << "The size of the linked list is " << list.size() << endl;
+  list.display();
+
+  cout << "Adding Nodes" << endl;
+  list.addNode(11);
+  list.addNode(21);
+  cout << "The size of the linked list is " << list.size() << endl;
+  list.display();
+
+  cout << "Deleting node with value 9" << endl;
+  list.deleteNode(9);
+  cout << "The size of the linked list is " << list.size() << endl;
+  list.display();
   return 0;
 }
