@@ -8,6 +8,11 @@ struct node {
 class SinglyLinkedList {
   private:
     node *head;
+    
+  public:
+    SinglyLinkedList() {
+      head = NULL;
+    }
 };
 
 int main() {
