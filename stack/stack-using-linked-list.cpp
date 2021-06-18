@@ -6,6 +6,7 @@ struct node {
   node *next;
 };
 
+node *top = NULL;
 
 int main()
 {
