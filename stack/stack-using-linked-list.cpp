@@ -16,11 +16,16 @@ void push(int value)
   top = tmp;
 }
 
+int peek() {
+  int value = top->value;
+  return value;
+}
+
 int main()
 {
   push(4);
   push(6);
   push(9);
-  
+
   return 0;
 }
