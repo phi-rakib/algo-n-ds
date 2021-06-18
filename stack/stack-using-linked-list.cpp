@@ -18,6 +18,9 @@ void push(int value)
 
 int main()
 {
-
+  push(4);
+  push(6);
+  push(9);
+  
   return 0;
 }
