@@ -8,6 +8,14 @@ struct node {
 
 node *top = NULL;
 
+void push(int value)
+{
+  node *tmp = new node();
+  tmp->value = value;
+  tmp->next = top;
+  top = tmp;
+}
+
 int main()
 {
 
