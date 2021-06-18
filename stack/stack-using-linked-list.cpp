@@ -24,8 +24,13 @@ int peek() {
 int main()
 {
   push(4);
+  cout << "Top of the stack is " << peek() << endl;
+  
   push(6);
+  cout << "Top of the stack is " << peek() << endl;
+  
   push(9);
+  cout << "Top of the stack is " << peek() << endl;
 
   return 0;
 }
