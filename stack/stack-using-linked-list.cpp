@@ -35,12 +35,15 @@ int main()
 {
   push(4);
   cout << "Top of the stack is " << peek() << endl;
+  cout << "Size of the stack is " << size() << endl;
   
   push(6);
   cout << "Top of the stack is " << peek() << endl;
+  cout << "Size of the stack is " << size() << endl;
   
   push(9);
   cout << "Top of the stack is " << peek() << endl;
+  cout << "Size of the stack is " << size() << endl;
 
   return 0;
 }
