@@ -21,6 +21,16 @@ int peek() {
   return value;
 }
 
+int size() {
+  node *tmp = top;
+  int count = 0;
+  while (tmp != NULL) {
+    tmp = tmp->next;
+    count++;
+  }
+  return count;
+}
+
 int main()
 {
   push(4);
