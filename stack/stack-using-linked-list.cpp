@@ -31,6 +31,10 @@ int size() {
   return count;
 }
 
+bool empty() {
+  return top == NULL;
+}
+
 int main()
 {
   push(4);
