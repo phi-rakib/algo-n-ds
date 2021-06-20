@@ -37,6 +37,8 @@ bool empty() {
 
 int main()
 {
+  cout << "Stack is " << (empty() ? "Empty" : "Not Empty") << endl;
+
   push(4);
   cout << "Top of the stack is " << peek() << endl;
   cout << "Size of the stack is " << size() << endl;
@@ -48,6 +50,8 @@ int main()
   push(9);
   cout << "Top of the stack is " << peek() << endl;
   cout << "Size of the stack is " << size() << endl;
+
+  cout << "Stack is " << (empty() ? "Empty" : "Not Empty") << endl;
 
   return 0;
 }
