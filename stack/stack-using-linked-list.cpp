@@ -35,6 +35,12 @@ bool empty() {
   return top == NULL;
 }
 
+int pop() {
+  int value = top->value;
+  top = top->next;
+  return value;
+}
+
 int main()
 {
   cout << "Stack is " << (empty() ? "Empty" : "Not Empty") << endl;
