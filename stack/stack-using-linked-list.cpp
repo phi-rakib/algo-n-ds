@@ -59,5 +59,8 @@ int main()
 
   cout << "Stack is " << (empty() ? "Empty" : "Not Empty") << endl;
 
+  pop();
+  cout << "Top of the stack is " << peek() << endl;
+  
   return 0;
 }
