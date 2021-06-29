@@ -28,6 +28,12 @@ int search(vector<int> &nums, int target)
 
 int main()
 {
+  vector<int> vec = vector<int>{1, 5, 12, 17, 22};
+
+  int target = 12;
+  int index = search(vec, target);
+
+  cout << (index == -1 ? "Not Found" : "Found") << endl;
 
   return 0;
 }
