@@ -19,6 +19,23 @@ bool binarySearch(vector<vector<int>> &a, int l, int r, int target, int m)
   return binarySearch(a, mid + 1, r, target, m);
 }
 
+bool search(vector<vector<int>> &matrix, int target)
+{
+  int n = matrix.size();
+
+  if (n == 0)
+    return false;
+
+  int m = matrix[0].size();
+
+  int siz = n * m;
+
+  if (siz == 0)
+    return false;
+
+  return binarySearch(matrix, 0, siz - 1, target, m);
+}
+
 int main()
 {
 
