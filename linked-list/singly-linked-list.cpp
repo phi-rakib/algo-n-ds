@@ -1,6 +1,4 @@
 #include <iostream>
-using namespace std;
-
 struct node
 {
   int value;
@@ -42,7 +40,7 @@ struct SinglyLinkedList
     node *currentNode = head;
     while (currentNode != NULL)
     {
-      cout << currentNode->value << endl;
+      std::cout << currentNode->value << std::endl;
       currentNode = currentNode->next;
     }
   }
@@ -114,30 +112,30 @@ int main()
 
   singlyLinkedList.display();
 
-  cout << "The size of the linked list is " << singlyLinkedList.size() << endl;
+  std::cout << "The size of the linked list is " << singlyLinkedList.size() << std::endl;
 
-  cout << "7 " << (singlyLinkedList.findNode(7) ? "Found" : "Not Found") << endl;
-  cout << "6 " << (singlyLinkedList.findNode(6) ? "Found" : "Not Found") << endl;
-  cout << "5 " << (singlyLinkedList.findNode(5) ? "Found" : "Not Found") << endl;
+  std::cout << "7 " << (singlyLinkedList.findNode(7) ? "Found" : "Not Found") << std::endl;
+  std::cout << "6 " << (singlyLinkedList.findNode(6) ? "Found" : "Not Found") << std::endl;
+  std::cout << "5 " << (singlyLinkedList.findNode(5) ? "Found" : "Not Found") << std::endl;
 
-  cout << "Deleting node with value 7" << endl;
+  std::cout << "Deleting node with value 7" << std::endl;
   singlyLinkedList.deleteNode(7);
-  cout << "The size of the linked list is " << singlyLinkedList.size() << endl;
+  std::cout << "The size of the linked list is " << singlyLinkedList.size() << std::endl;
   singlyLinkedList.display();
 
-  cout << "Deleting node with value 4" << endl;
+  std::cout << "Deleting node with value 4" << std::endl;
   singlyLinkedList.deleteNode(4);
-  cout << "The size of the linked list is " << singlyLinkedList.size() << endl;
+  std::cout << "The size of the linked list is " << singlyLinkedList.size() << std::endl;
   singlyLinkedList.display();
 
   singlyLinkedList.addNode(11);
   singlyLinkedList.addNode(21);
-  cout << "The size of the linked list is " << singlyLinkedList.size() << endl;
+  std::cout << "The size of the linked list is " << singlyLinkedList.size() << std::endl;
   singlyLinkedList.display();
 
-  cout << "Deleting node with value 9" << endl;
+  std::cout << "Deleting node with value 9" << std::endl;
   singlyLinkedList.deleteNode(9);
-  cout << "The size of the linked list is " << singlyLinkedList.size() << endl;
+  std::cout << "The size of the linked list is " << singlyLinkedList.size() << std::endl;
   singlyLinkedList.display();
 
   return 0;
